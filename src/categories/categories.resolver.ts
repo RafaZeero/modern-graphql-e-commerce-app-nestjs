@@ -1,4 +1,5 @@
 import { Query, Resolver } from '@nestjs/graphql';
+import { Product } from 'src/products/models/product.model';
 import { CategoriesService } from './categories.service';
 
 @Resolver()

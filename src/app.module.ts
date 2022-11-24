@@ -4,6 +4,8 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CategoriesModule } from './categories/categories.module';
+import { ProductsModule } from './products/products.module';
+import { DatabaseModule } from './database/database.module';
 
 @Module({
   imports: [
@@ -12,6 +14,8 @@ import { CategoriesModule } from './categories/categories.module';
       autoSchemaFile: true,
     }),
     CategoriesModule,
+    ProductsModule,
+    DatabaseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
